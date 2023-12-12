@@ -204,8 +204,7 @@
       </p>
        <div class="buttons">
         <button onclick="scrollToPortfolio()">View Portfolio</button>
-        <button onclick="downloadResume()" target ="_blank">Download Resume</button>
-      </div>
+        </div>
 
     </section>
        <!-- Skills Section -->
@@ -341,16 +340,6 @@
       document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
     }
 
-     function downloadResume() {
-      var resumePath = 'MuhammadAbdullahAbid.github.io/Resume/MAbdullahAbid-Resume.pdf'; // Replace with the actual path to your resume file
-      var link = document.createElement('a');
-
-      link.href = resumePath;
-      link.download = 'MuhammadAbdullahAbid.github.io/Resume/MAbdullahAbid-Resume.pdf'; // Rename the downloaded file if needed
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
 </script>
 </body>
 </html>
